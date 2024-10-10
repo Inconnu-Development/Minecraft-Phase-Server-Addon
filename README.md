@@ -6,6 +6,8 @@ You dont need any permissions System if you just play with some friends in this 
 Plug and Play.
 
 ### 📥 Download Plugin
+
+🔗 [BuiltByBit](https://builtbybit.com/resources/minecraft-phase-server-addon.52980/)
 🔗 [GitHub Releases](https://github.com/Inconnu-Development/Minecraft-Phase-Server-Addon/releases)
 
 ### ✨ Features
@@ -21,7 +23,7 @@ The Features can be disbaled one by one if you dont need/want them.
 ### ⚙️ Installation
 
 1. **Spigot or Paper 1.21.1**: Ensure your server is running on Minecraft version 1.21.1.
-2. Download the latest version of the plugin from [GitHub Releases](https://github.com/Inconnu-Development/Minecraft-Phase-Server-Addon/releases).
+2. Download the latest version of the plugin from [BuiltByBit](https://builtbybit.com/resources/minecraft-phase-server-addon.52980/).
 3. Place the `.jar` file into your server's plugins folder.
 4. Restart the server or use `/reload` to load the plugin.
 
