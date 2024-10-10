@@ -84,7 +84,7 @@ public final class MPSA extends JavaPlugin {
     public static boolean isUpdateAvailable() {
 
         try {
-            URL url = new URL("https://github.com/Inconnu-Development/Minecraft-Phase-Server-Addon/releases/latest");
+            URL url = new URL("https://api.github.com/repos/Inconnu-Development/Minecraft-Phase-Server-Addon/releases/latest");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("Accept", "application/vnd.github.v3+json");
 

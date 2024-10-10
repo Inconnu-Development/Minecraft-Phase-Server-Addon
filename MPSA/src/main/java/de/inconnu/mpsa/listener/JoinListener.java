@@ -17,7 +17,7 @@ public class JoinListener implements Listener {
         String uuid = player.getUniqueId().toString();
         String name = player.getName();
 
-        if (player.hasPermission("betakey.admin")) {
+        if (player.hasPermission("phase.admin.update")) {
             if (MPSA.isUpdateAvailable()) {
 
                 TextComponent updateMessage = new TextComponent("§7[§aDownload latest Version§7]");
