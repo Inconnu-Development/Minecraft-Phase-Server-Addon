@@ -17,7 +17,7 @@ The Features can be disbaled one by one if you dont need/want them.
 - 🌍 **Warps**: Set warp points to allow players to quickly teleport to specific locations.
 - 🏠 **Homes**: Allow players to set personal home points for easy teleportation back to their base.
 - 🤝 **TPA**: Teleport to your friends.
-- 🎒 **Backpack**: Provides players with additional inventory space through a portable backpack. *(coming soon)*
+- 🎒 **Backpack**: Provides players with additional inventory space through a portable backpack.
 - 🚀 More useful addons and features coming in future updates!
 
 ### ⚙️ Installation
