@@ -1,0 +1,30 @@
+main: de.inconnu.mpsa.MPSA
+name: MPSA
+author: 'Inconnu Development'
+website: 'https://builtbybit.com/resources/minecraft-phase-server-addon.52980/'
+version: '1.0.0-RELEASE'
+commands:
+  home:
+    description: "/home command to teleport to your home"
+  sethome:
+    description: "Set a home"
+  delhome:
+    description: "Delete a home"
+  homes:
+    description: "Display all homes"
+  warp:
+    description: "/home command to teleport to your warp"
+  setwarp:
+    description: "Set a warp"
+  delwarp:
+    description: "Delete a warp"
+  warps:
+    description: "Display all warps"
+  tpa:
+    description: "Send a TPA request to another player"
+  tpaaccept:
+    description: "Accept a TPA request"
+  backpack:
+    aliases:
+      - bp
+    description: "Backpack for all players"
