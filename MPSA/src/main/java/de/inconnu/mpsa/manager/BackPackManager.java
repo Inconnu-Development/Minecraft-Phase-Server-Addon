@@ -20,10 +20,10 @@ public class BackPackManager {
 
     public static YamlConfiguration invData = YamlConfiguration.loadConfiguration(invfile);
 
-    public static boolean saveBackpack(Inventory inventory)
+    public static boolean saveBackpack(Inventory inventory, String pbid)
     {
         String data = inventoryToBase64(inventory);
-        invData.set("backpackInv", data);
+        invData.set(pbid, data);
 
         try {
             invData.save(invfile);
@@ -35,9 +35,9 @@ public class BackPackManager {
         return true;
     }
 
-    public static Inventory getBackPack()
+    public static Inventory getBackPack(String bpid)
     {
-        return getInventoryFromBase64(invData.getString("backpackInv"));
+        return getInventoryFromBase64(invData.getString(bpid));
     }
 
     private static String inventoryToBase64(Inventory inventory) throws IllegalStateException {

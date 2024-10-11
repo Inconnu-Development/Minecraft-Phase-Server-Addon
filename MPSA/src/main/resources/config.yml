@@ -1,3 +1,4 @@
+configVersion: 1
 settings:
   enableDebugMode: false
   enablePermissions: true
@@ -47,6 +48,7 @@ messages:
     teleportTarget: "You have been teleported to %player%."
     teleportCommandUser: "You accepted the teleport request from %player%."
   backpack:
-    backpackInvTitle: "&7Backpack"
+    playerBackpackInvTitle: "&7Backpack"
+    publicBackpackInvTitle: "&7Backpack"
     backpackIsInUse: "&cThe backpack is currently being used by another player."
 

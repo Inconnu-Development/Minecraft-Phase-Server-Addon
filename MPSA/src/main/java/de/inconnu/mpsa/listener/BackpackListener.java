@@ -20,7 +20,16 @@ public class BackpackListener implements Listener {
 
                     BackpackCommand.setOpenPlayerUUID(null);
 
-                    BackPackManager.saveBackpack(event.getInventory());
+                    BackPackManager.saveBackpack(event.getInventory(), "backpackInv");
+
+                    BackpackCommand.setBackapIsOpen(false);
+                }
+            } else {
+                if (player.getOpenInventory().getTitle().equals(ConfigManager.getBackpackInvTitle())) {
+
+                    BackpackCommand.setOpenPlayerUUID(null);
+
+                    BackPackManager.saveBackpack(event.getInventory(), player.getUniqueId().toString());
 
                     BackpackCommand.setBackapIsOpen(false);
                 }

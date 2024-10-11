@@ -29,7 +29,7 @@ public class BackpackCommand implements CommandExecutor {
         }
         Player player = (Player) sender;
 
-        if (!ConfigManager.isWarpsEnabled()) {
+        if (!ConfigManager.isBackpackEnabled()) {
             player.sendMessage(MPSA.getPrefix() + ConfigManager.getAddonDisabled());
             return false;
         }
@@ -41,25 +41,46 @@ public class BackpackCommand implements CommandExecutor {
             }
         }
 
-        if (args.length != 0) {
-            player.sendMessage(MPSA.getPrefix() + "§7/backpack");
+        if (args.length == 0) {
+
+            Inventory inventory = BackPackManager.getBackPack(player.getUniqueId().toString());
+
+            if (inventory != null) {
+                player.openInventory(inventory);
+            }
+
             return false;
         }
 
-        if (backapIsOpen) {
-            player.sendMessage(MPSA.getPrefix() + ConfigManager.getBackpackIsInUse());
+        if (args.length == 1) {
+
+            if (!args[0].equalsIgnoreCase("all")) {
+                player.sendMessage(MPSA.getPrefix() + "§7/backpack; /backpack all");
+                return false;
+            }
+
+            if (backapIsOpen) {
+                player.sendMessage(MPSA.getPrefix() + ConfigManager.getBackpackIsInUse());
+                return false;
+            }
+
+            backapIsOpen = true;
+            openPlayerUUID = player.getUniqueId();
+
+            Inventory inventory = BackPackManager.getBackPack("backpackInv");
+
+            if (inventory != null) {
+                player.openInventory(inventory);
+            }
+
             return false;
         }
 
-        backapIsOpen = true;
-        openPlayerUUID = player.getUniqueId();
 
-        Inventory inventory = BackPackManager.getBackPack();
-
-        if (inventory != null) {
-            player.openInventory(inventory);
+        if (args.length >= 2) {
+            player.sendMessage(MPSA.getPrefix() + "§7/backpack; /backpack all");
+            return false;
         }
-
 
         return false;
     }
