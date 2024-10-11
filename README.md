@@ -8,6 +8,7 @@ Plug and Play.
 ### 📥 Download Plugin
 
 🔗 [BuiltByBit](https://builtbybit.com/resources/minecraft-phase-server-addon.52980/)
+🔗 [SpigotMC](https://www.spigotmc.org/resources/minecraft-phase-server-addon.120144/)
 🔗 [GitHub Releases](https://github.com/Inconnu-Development/Minecraft-Phase-Server-Addon/releases)
 
 ### ✨ Features
