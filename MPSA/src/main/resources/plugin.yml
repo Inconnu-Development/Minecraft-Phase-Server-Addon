@@ -2,7 +2,7 @@ main: de.inconnu.mpsa.MPSA
 name: MPSA
 author: 'Inconnu Development'
 website: 'https://builtbybit.com/resources/minecraft-phase-server-addon.52980/'
-version: '1.0.0-RELEASE'
+version: '1.0.1-RELEASE'
 commands:
   home:
     description: "/home command to teleport to your home"
@@ -27,4 +27,4 @@ commands:
   backpack:
     aliases:
       - bp
-    description: "Backpack for all players"
+    description: "Own Backpack with /backpack or Backpack for all players with /backpack all"

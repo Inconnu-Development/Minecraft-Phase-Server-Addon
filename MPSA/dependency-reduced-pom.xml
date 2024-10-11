@@ -4,7 +4,7 @@
   <groupId>de.ente</groupId>
   <artifactId>MPSA</artifactId>
   <name>MPSA</name>
-  <version>1.0.0-RELEASE</version>
+  <version>1.0.1-RELEASE</version>
   <build>
     <resources>
       <resource>

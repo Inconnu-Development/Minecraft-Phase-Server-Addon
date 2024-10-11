@@ -17,6 +17,9 @@ public class ConfigManager {
     private static int backpackSize = 0;
 
     @Getter
+    private static int configVersion;
+
+    @Getter
     private static boolean isTpaEnabled;
 
     @Getter
@@ -28,6 +31,8 @@ public class ConfigManager {
 
     @Getter
     private static String backpackInvTitle;
+    @Getter
+    private static String playerBackpackInvTitle;
     @Getter
     private static String backpackIsInUse;
 
@@ -89,6 +94,7 @@ public class ConfigManager {
             MPSA.getPlugin().getConfig().options().copyDefaults(true);
             MPSA.getPlugin().saveConfig();
 
+            configVersion = MPSA.getPlugin().getConfig().getInt("configVersion");
             isDebugMode = MPSA.getPlugin().getConfig().getBoolean("settings.enableDebugMode");
             isPermissionsEnabled = MPSA.getPlugin().getConfig().getBoolean("settings.enablePermissions");
 
@@ -108,7 +114,8 @@ public class ConfigManager {
             onlyByPlayer = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.general.onlyByPlayer"));
             addonDisabled = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.general.addonDisabled"));
 
-            backpackInvTitle = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.backpack.backpackInvTitle"));
+            playerBackpackInvTitle = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.backpack.playerBackpackInvTitle"));
+            backpackInvTitle = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.backpack.publicBackpackInvTitle"));
             backpackIsInUse = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.backpack.backpackIsInUse"));
 
             yourHomes = ChatColor.translateAlternateColorCodes('&', MPSA.getPlugin().getConfig().getString("messages.homes.yourHomes"));

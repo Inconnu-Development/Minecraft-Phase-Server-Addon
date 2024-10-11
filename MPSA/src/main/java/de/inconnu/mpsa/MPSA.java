@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import de.inconnu.mpsa.commands.*;
 import de.inconnu.mpsa.listener.BackpackListener;
+import de.inconnu.mpsa.listener.JoinListener;
 import de.inconnu.mpsa.manager.ConfigManager;
 import lombok.Getter;
 import lombok.Setter;
@@ -49,6 +50,17 @@ public final class MPSA extends JavaPlugin {
             getLogger().info("Minecraft-Phase-Server-Addon (MPSA) is up to date.");
         }
 
+        int latestConfigVersion = 1;
+
+        if (latestConfigVersion != ConfigManager.getConfigVersion()){
+            getLogger().warning("");
+            getLogger().warning("It seems like we changed our Config Layout in the latest update.");
+            getLogger().warning("If you facing any issues delete the \"plugins/MPSA/config.yml\" file.");
+            getLogger().warning("If everything is working out for you,");
+            getLogger().warning("you can just update the \"configVersion\" in you \"plugins/MPSA/config.yml\" file too " + latestConfigVersion );
+            getLogger().warning("");
+        }
+
     }
 
     @Override
@@ -79,6 +91,7 @@ public final class MPSA extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
 
         pluginManager.registerEvents(new BackpackListener(), this);
+        pluginManager.registerEvents(new JoinListener(), this);
     }
 
     public static boolean isUpdateAvailable() {

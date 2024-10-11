@@ -1,3 +1,4 @@
+configVersion: 1
 settings:
   enableDebugMode: false
   enablePermissions: true
@@ -14,39 +15,40 @@ tpa:
   enable: true
 messages:
   general:
-    Prefix: "&8[&9MPSA§8] &7"
-    noPermission: "§cYou do not have permission for this."
-    onlyByPlayer: "§cThis command can only be executed by a player."
-    addonDisabled: "§cThis addon has been disabled."
+    Prefix: "&8[&9MPSA&8] &7"
+    noPermission: "&cYou do not have permission for this."
+    onlyByPlayer: "&cThis command can only be executed by a player."
+    addonDisabled: "&cThis addon has been disabled."
   homes:
-    yourHomes: "§7These are your homes:"
-    toManyHomes: "§7You cannot create any more homes."
-    homeAlreadyExists: "§7This home already exists."
-    homeAreDisabled: "§7Homes are disabled."
-    homeNotExists: "§7This home does not exist."
-    teleportToHome: "§7You have teleported."
-    newHomeCreated: "§7You have created a new home."
-    homeDeleted: "§7You deleted this home."
+    yourHomes: "&7These are your homes:"
+    toManyHomes: "&7You cannot create any more homes."
+    homeAlreadyExists: "&7This home already exists."
+    homeAreDisabled: "&7Homes are disabled."
+    homeNotExists: "&7This home does not exist."
+    teleportToHome: "&7You have teleported."
+    newHomeCreated: "&7You have created a new home."
+    homeDeleted: "&7You deleted this home."
   warps:
-    warps: "§7These are all the warps:"
-    toManyWarps: "§7You cannot create any more warps."
-    warpAlreadyExists: "§7This warp already exists."
-    warpsAreDisabled: "§7Warps are disabled."
-    warpNotExists: "§7This warp does not exist."
-    teleportToWarp: "§7You have teleported."
-    newWarpCreated: "§7You have created a new warp."
-    warpDeleted: "§7You deleted this warp."
+    warps: "&7These are all the warps:"
+    toManyWarps: "&7You cannot create any more warps."
+    warpAlreadyExists: "&7This warp already exists."
+    warpsAreDisabled: "&7Warps are disabled."
+    warpNotExists: "&7This warp does not exist."
+    teleportToWarp: "&7You have teleported."
+    newWarpCreated: "&7You have created a new warp."
+    warpDeleted: "&7You deleted this warp."
   tpa:
-    playerNotFound: "§7Player not found."
-    cantTpToYourself: "§7You cannot teleport to yourself."
-    tpaRequest: "§7%player% wants to teleport to you."
-    tpaRequestAccept: "§7[§aAccept§7]"
-    sendRequest: "§7Request sent to %player%."
-    noOpenRequests: "§7There are no pending TPA requests."
+    playerNotFound: "&7Player not found."
+    cantTpToYourself: "&7You cannot teleport to yourself."
+    tpaRequest: "&7%player% wants to teleport to you."
+    tpaRequestAccept: "&7[&aAccept&7]"
+    sendRequest: "&7Request sent to %player%."
+    noOpenRequests: "&7There are no pending TPA requests."
     playerNotOnline: "The player who sent the request is no longer online."
     teleportTarget: "You have been teleported to %player%."
     teleportCommandUser: "You accepted the teleport request from %player%."
   backpack:
-    backpackInvTitle: "§7Backpack"
-    backpackIsInUse: "§cThe backpack is currently being used by another player."
+    playerBackpackInvTitle: "&7Backpack"
+    publicBackpackInvTitle: "&7Backpack"
+    backpackIsInUse: "&cThe backpack is currently being used by another player."
 
